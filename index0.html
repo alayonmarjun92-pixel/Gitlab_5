@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #007bff, #6f42c1);
+      color: white;
+    }
+
+    nav {
+      width: 100%;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      min-height: calc(100vh - 70px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 13px 30px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .login-btn {
+      background: white;
+      color: #007bff;
+    }
+
+    .register-btn {
+      background: #222;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav {
+        padding: 18px 5%;
+      }
+
+      nav ul {
+        gap: 12px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">My Website</div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Welcome to My Website</h1>
+
+      <p>
+        Welcome to our website! Create an account or log in
+        to get started and explore our features.
+      </p>
+
+      <div class="buttons">
+        <a href="login.html" class="btn login-btn">
+          Login
+        </a>
+
+        <a href="register.html" class="btn register-btn">
+          Create Account
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 My Website. All rights reserved.
+  </footer>
+
+</body>
+</html>
